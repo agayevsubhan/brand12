@@ -1,0 +1,164 @@
+
+.contact{
+    background-color:#eee;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+button{
+    cursor: pointer;
+}
+a, ul{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+  h1{
+    color: blue;
+  }
+    max-width: 1440px;
+    padding:  30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a{
+        display: flex;
+        justify-content: space-between;
+    }
+.brands > h1 {
+    color: rgb(48, 75, 75);
+    font-size: 32px;
+}
+.myBottom{
+    transform: rotateZ(90deg);
+    margin-left: 10px;
+}
+.select > ul{
+    font-size: 16px;
+    transition: 2s;
+display: flex;
+align-items: center;
+gap: 30px;
+}
+.mybtn{
+    display: none;
+}
+#Links #About{
+    position: relative;
+}
+#About >a {
+padding-bottom: 20px;
+margin-top: 23px;
+}
+.initial{
+width: 200px;
+border-top: 4px solid rgb(48, 75, 75);
+display: none;
+position: absolute;
+background-color: white;
+
+}
+.initial > li:hover, .menu> li:hover{
+background-color: rgb(184, 175, 175);
+}
+.menu{
+    display: none;
+    position: absolute;
+    width: 200px;
+    border-top: 4px solid rgb(48, 75, 75);
+    left: 200px;
+    top: 65px;
+background-color: white;
+}
+.btn {
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    li.Links:hover .menu {
+      display: block;
+    }
+    li.About:hover .initial {
+      display: block;
+    }
+  }
+@media screen and (max-width: 1000px) {
+    nav {
+      justify-content: space-around;
+    }
+    .select {
+      display: none;
+      position: relative;
+    }
+    .btn {
+      display: block;
+    }
+    .select > button {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 32px;
+    }
+  
+    .mybtn {
+      display: block;
+    }
+    .mybtn > button {
+      border: 0;
+      background: 0;
+      font-size: 40px;
+      color: rgb(0, 81, 255);
+    }
+    a {
+      padding: 10px;
+      font-size: 24px;
+    }
+  
+    .displayClass {
+      display: block;
+      width: 80%;
+      height: 100px;
+      position: fixed;
+      right: 0;
+      background-color: white;
+    }
+    .displayClass > ul {
+      display: block;
+      width: 80%;
+      height: auto;
+      height: auto;
+    }
+  
+    .displayUl {
+      display: inline-block;
+      position: relative;
+      border-bottom: 3px solid rgb(0, 81, 255);
+      left: 20px;
+    }
+    .displayUl .myTop {
+      transform: rotateZ(-90deg);
+      margin-bottom: 10px;
+    }
+    .menu {
+      margin-left: -20px;
+      padding-left: 20px;
+      top: 0;
+      border: 0;
+    }
+  }
+
+.photores{
+  max-width:100%;
+  
+}
+
+@media screen and (max-width: 1000px) {
+    img {
+        max-width: 100%;
+    
+    }
+}
+}
